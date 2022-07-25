@@ -25,7 +25,7 @@ jobs:
       - name: Install cargo-binstall for rust project binary installation
         run: cargo install cargo-binstall
       - name: Install tre for dumping dir contents, tarpaulin for code coverage
-        run: cargo binstall cargo-tarpaulin tre
+        run: cargo binstall --no-confirm cargo-tarpaulin tre
       - name: Run tre
         run: tre
       - name: Run with code coverage
